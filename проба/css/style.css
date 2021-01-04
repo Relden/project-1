@@ -1,0 +1,125 @@
+
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+
+body{
+    display: flex;
+    flex-direction: column;
+    max-width:  1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+header{
+    display: flex;
+    background-color: rgb(199, 128, 61);
+}
+.header_logo{
+    justify-content: flex-start;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header_menu{
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.header_menu li{
+    display: inline-flex;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+li{
+    background: rgb(255, 255, 255);
+    border: 3px solid  rgba(48, 13, 12, 0.753) ;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 50px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 18px;   
+}
+ul{
+    margin-top:35px ;
+}
+
+main{
+    
+}
+
+footer{
+    background: rgb(143, 161, 172);
+    height: 100px;
+}
+
+.contact{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.links , .numbers {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-right: 50px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 18px;  
+    height: 100px;
+}
+
+.links{
+    justify-content: space-around;
+    position: relative;
+}
+
+.google ::before{
+    content: '';
+    position: absolute;
+    background-image: url(/img/li.svg);
+    max-height: 50px;
+    max-width: 50px;
+    top: 22px;
+    right: 30px;
+
+}
+
+.youtube{
+   
+}
+
+.youtube ::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background: url(/img/instagram-glyph-1.svg) no-repeat;
+    height: 10px;
+    width: 10px;
+    top: 22px;
+    right: 30px;
+}
+
+.numbers{
+    justify-content: space-around;
+}
